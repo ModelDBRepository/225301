@@ -43,3 +43,7 @@ e.g. to extract mean firing rates and tuning curves
 (iii) Use [4] to preprocess the raw data and plot example network tuning curves.
 
 ################################################################################
+
+20170403 Sadra Sadeh fixed a small typo (line 227 of SpecNt_source.py:
+fs_ei changed to fs_ie) that would have caused problem for further
+extensions of the model.

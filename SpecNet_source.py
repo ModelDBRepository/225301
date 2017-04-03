@@ -224,7 +224,7 @@ class SpecNet(object):
                    nest.ConvergentConnect(con_exc[ne], [nodes_all_rep_excInp[ne]], exc_list, CE*[delay])
               # inh --> exc
                dth = po_init[np.array(con_inh[ne])-1] - po_init[ne]
-               inh_list = (J_ie *(1+fs_ei*fs_mod *np.cos(2*dth))).tolist()
+               inh_list = (J_ie *(1+fs_ie*fs_mod *np.cos(2*dth))).tolist()
                nest.ConvergentConnect(con_inh[ne], [nodes_all[ne]], inh_list, CI*[delay])
                if ne < n_smpl:
                    nest.ConvergentConnect(con_inh[ne], [nodes_all_rep_inhInp[ne]], inh_list, CI*[delay])
